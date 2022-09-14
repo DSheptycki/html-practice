@@ -1,0 +1,29 @@
+/*the tag your selecting to edit ->*/body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* If adding a "." prefix to a tag, creating a class. No "." prefix means targeting every tag.*/
+header {
+    background-color: #25811b;
+    text-align: center;
+    padding: 20px;
+  }
+
+/* Navigation Bar Container */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+/* Navigation Bar links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+/* Navigation Bar Links - changes color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
