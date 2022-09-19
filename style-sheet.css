@@ -8,24 +8,41 @@ header {
     padding: 20px;
   }
 
-/* Navigation Bar Container */
-.topnav {
+
+/* Navigation Bar */
+.topnav ul {
+    list-style-type: none; /* sets the list style to none (removes bullet points) */
+    margin: 0;
+    padding: 0;
     overflow: hidden;
     background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
 }
-/* Navigation Bar links */
-.topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
+.active {
+  background-color: #924905;
+}
+.topnav li {
+  float:left;
+  border-right: 1px solid #bbb;
+}
+.topnav li:last-child {
+  border-right: none;
+}
+.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 /* Navigation Bar Links - changes color on hover */
-.topnav a:hover {
-    background-color: rgb(255, 255, 255);
-    color: black;
+.topnav li a:hover {
+  background-color: #111;
   }
+
+
   .column {
     float: left;
     text-align: center;
@@ -54,7 +71,7 @@ header {
   
   /* Responsive layout - makes the three columns stack on top of each other instead of next to each other*/
   @media screen and (max-width: 600px) {
-    .column.side, .column.middle, .column.bar {
+    .column.side, .column.middle {
       width: 100%;
     }
   }

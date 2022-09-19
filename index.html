@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
     <link rel="stylesheet" href="style-sheet.css">
+    <script src="functions.js"></script>
 </head>    
 <!--Comments-->
 <body>
@@ -22,25 +23,13 @@
     </header>
 
     <nav class="topnav">
-
-        <a 
-        href="headings-and-paragraphs.html">
-        Headings And Paraghraphs
-        </a>
-
-        <a 
-        href="links-and-images.html">
-        Links and Images
-        </a>
-
-        <a 
-        href="iframes-and-lists.html">
-        I-Frames and Lists
-        </a>
-
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="headings-and-paragraphs.html">Headings And Paraghraphs</a></li>
+            <li><a href="links-and-images.html">Links and Images</a></li>
+            <li><a href="iframes-and-lists.html">I-Frames and Lists</a></li>
+        </ul>
     </nav>
-
-
 <div class="row">
 
     <div class="column side">
@@ -49,10 +38,8 @@
         About Me 
         </h3>
 
-        <p>
-        i am a god in human form. disagree? prove it.
-        </p>
-
+        <p id="aboutMe">I am a god in human from</p>
+        <button id = "button" type="button" onclick="myFunction()">I Disagree</button>
     </div>
 
     <div class="column bar"></div>
