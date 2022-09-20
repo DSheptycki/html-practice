@@ -1,5 +1,6 @@
 /*the tag your selecting to edit ->*/body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: whitesmoke;
 }
 /* If adding a "." prefix to a tag, then targeting a class. No "." prefix means targeting every tag that you chose.*/
 header {
@@ -7,7 +8,13 @@ header {
     text-align: center;
     padding: 20px;
   }
-
+footer {
+  text-align: center;
+   padding: 20px;
+   background-color: #333;
+   color: white;
+   height: px;
+}
 
 /* Navigation Bar */
 .topnav ul {
@@ -27,9 +34,6 @@ header {
   float:left;
   border-right: 1px solid #bbb;
 }
-.topnav li:last-child {
-  border-right: none;
-}
 .topnav li a {
   display: block;
   color: white;
@@ -41,37 +45,26 @@ header {
 .topnav li a:hover {
   background-color: #111;
   }
-
-
+  .column.third {
+    width: 33%;
+  }
   .column {
     float: left;
     text-align: center;
-  }
-  .column.half {
-  width: 50%;
-  text-align: left;
+    height: 475px;
   }
   /* Left and right column */
   .column.side {
-    width: 20%;
-  }
-  .column.bar {
-    width: 5%;
-    display: block;
-    background-color: #333;
-    color:#333;
-    overflow: hidden;
-    height: 0;
-    padding-top: 56.25%;
+    width: 25%;
   }
   /* Middle column */
   .column.middle {
-    width: 45%;
+    width: 50%;
   }
   
   /* Responsive layout - makes the three columns stack on top of each other instead of next to each other*/
   @media screen and (max-width: 600px) {
-    .column.side, .column.middle {
+    .column.side, .column.middle, .column.third {
       width: 100%;
     }
   }
@@ -80,4 +73,16 @@ header {
     content: "";
     display: table;
     clear: both;
+  }
+
+  table, th, td {
+    text-align: center;
+    margin: auto;
+  }
+  th, td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  tr:hover {
+    background-color: #b45a06;
   }

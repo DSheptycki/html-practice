@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>iframes-and-lists.html</title>
+    <title>I-Frames Tables And Lists</title>
     <link rel="stylesheet" href="style-sheet.css">
 </head>
 <body>
     <header>
-        <h1>I-Frames and Lists</h1>
-        <p> This webpage shows an example of a iFrame and all the different kinds of lists</p>
+        <h1>I-Frames, Tables and Lists</h1>
+        <p> This webpage shows an example of a iFrame and all the different kinds of tables and lists</p>
     </header>
 
     <div class="topnav">
@@ -20,7 +20,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="headings-and-paragraphs.html">Headings And Paraghraphs</a></li>
                 <li><a href="links-and-images.html">Links and Images</a></li>
-                <li class="active"><a href="iframes-and-lists.html">I-Frames and Lists</a></li>
+                <li class="active"><a href="iframes-tables-and-lists.html">I-Frames, Tables and Lists</a></li>
             </ul>
         </nav>
 
@@ -28,9 +28,9 @@
 
     <br />
 
-    <div class="column half">
+    <div class="column third">
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/oLvEinbpdDQ" title="Kitchen Knightmares by Gordan Ramsay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/oLvEinbpdDQ" title="Kitchen Knightmares by Gordan Ramsay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     <br />
     <a href="https://www.youtube.com/watch?v=oLvEinbpdDQ">View this video on the youtube website</a>
@@ -38,18 +38,18 @@
 
     </div>
 
-    <div class="column half">
+    <div class="column third list">
     <h2>
         Unordered Lists
     </h2>
 
-    <ul type ="square">
+    <ul>
         <li>Soup</li>
-        <ul>
-            <li>Chicken Noodle Soup</li>
-            <li>Cheddar Broccoli Soup</li>
-            <li>Split Pea Soup</li>
-        </ul>
+            <ul>
+                <li>Chicken Noodle Soup</li>
+                <li>Cheddar Broccoli Soup</li>
+                <li>Split Pea Soup</li>
+            </ul>
     </ul>
 
     <h2>
@@ -73,7 +73,32 @@
         <dt> Pepporoni Pizza</dt>
         <dd> -Pizza Dough, Tomato-Style Sauce, Mozzerela Cheese, Pepporoni</dd>
     </dl>
-
 </div>
+
+<div class="column third" style="overflow-x:auto;">
+ <table>
+    <tr> <!-- table row -->
+        <th>Student</th>
+        <th>Grade</th>
+        <th>Language</th>
+    </tr>
+    <tr>
+        <td>John Johnson</td>
+        <td>12</td>
+        <td>English</td>
+    </tr>
+    <tr>
+        <td>Jane Poultry</td>
+        <td>10</td>
+        <td>French</td>
+    </tr>
+    <tr>
+        <td>Ben Potato</td>
+        <td>9</td>
+        <td>English</td>
+    </tr>
+ </table>
+</div>
+
 </body>
 </html>
