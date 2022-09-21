@@ -4,3 +4,8 @@ function myFunction() {
 const element = document.getElementById("button");
     element.remove();
 }
+function search() {
+var input;
+input = document.getElementById('myInput');
+str.search("input");
+}
