@@ -15,7 +15,7 @@ body {
     list-style-type: none; /* sets the list style to none (removes bullet points) */
 }
 .active {
-  background-color: #525252;
+  background-color: #7e7e7e;
 }
 .topnav li {
   float:left;

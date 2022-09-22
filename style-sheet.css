@@ -1,6 +1,8 @@
 /*the tag your selecting to edit ->*/body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: whitesmoke;
+    height: 100%;
+    min-height: 100%;
 }
 /* If adding a "." prefix to a tag, then targeting a class. No "." prefix means targeting every tag that you chose.*/
 header {
@@ -11,9 +13,13 @@ header {
 footer {
   text-align: center;
   padding: 5px;
-  position: sticky;
-   background-color: #333;
-   color: white;
+  background-color: #333;
+  color: white;
+  position : absolute;
+  bottom : 0;
+  height : 40px;
+  margin-top : 40px;
+  width: 100%;
 }
 
 /* Navigation Bar */
@@ -85,4 +91,29 @@ footer {
   }
   tr:hover {
     background-color: #b45a06;
+  }
+  .form input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+  }
+  .form [type=text] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #999
+  }
+  .form [type=text]:focus {
+    border: 3px solid #555
+  }
+  .form input[type=text]:focus {
+    width:50%;
   }
