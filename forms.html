@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forms</title>
     <link rel="stylesheet" href="style-sheet.css">
+    <script src="functions.js"></script>
 </head>
 <body>
     <header> 
@@ -26,17 +27,19 @@
             <li><a href="headings-and-paragraphs.html">Headings And Paraghraphs</a></li>
             <li><a href="links-and-images.html">Links and Images</a></li>
             <li><a href="iframes-tables-and-lists.html">I-Frames, Tables and Lists</a></li>
-            <li><a href="layout-example.html">Layout Example</a></li>
             <li class="active"><a href="forms.html">Forms</a></li>
+            <li><a href="layout-example.html">Layout Example</a></li>
         </ul>
     </nav>
 <div class="form">
-    <form name="recipe-suggestions" id="form1" method="get">
+    <form name="recipe-suggestions" id="form1" method="get" autocomplete="off">
         <label for="recipe-suggestion">Whats Your Favourite Meal?</label><br />
-        <input type="text" name="recipe-suggestion" id="meal" required /> <br />
-        <label for="recipe-ingredients"> What are its ingredients?</label> <br />
-        <input type="text" name="recipe-ingredients" id="ingredients" required /> <br />
-        
+        <input type="text" name="recipe-suggestion" id="meal" required/> <br />
+        <label for="recipe-ingredients"> What are its ingredients?</label><br />
+        <input type="text" name="recipe-ingredients" id="ingredients" required/><br />
+        <button type="submit" onclick="submitRecipe()" onclick="recipeName()">Submit</button>
+        <p id="recipelist">recipe name</p>
+        <p id="ingredientslist">ingredients list</p>
     </form>
 </div>
 </body>
