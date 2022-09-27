@@ -134,6 +134,8 @@ footer {
   }
   .form {
     width: 50%;
-    height: 30%;
-    float: left;
+    float:left;
+  }
+  .form.whole{
+    height: 100%;
   }
