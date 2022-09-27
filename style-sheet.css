@@ -92,7 +92,7 @@ footer {
   tr:hover {
     background-color: #b45a06;
   }
-  .form input[type=text] {
+  .form input[type=text], input[type=password] {
     width: 130px;
     box-sizing: border-box;
     border: 2px solid #ccc;
@@ -105,16 +105,16 @@ footer {
     padding: 12px 20px 12px 40px;
     transition: width 0.4s ease-in-out;
   }
-  .form [type=text] {
+  .form [type=text], [type=password] {
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
     border: 3px solid #999
   }
-  .form [type=text]:focus {
+  .form [type=text]:focus, [type=password]:focus {
     border: 3px solid #777
   }
-  .form input[type=text]:focus {
+  .form input[type=text]:focus, input[type=password]:focus {
     width:25%;
   }
   .form button {
@@ -131,4 +131,9 @@ footer {
     background-color: #ff7b00;
     color: white;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  .form {
+    width: 50%;
+    height: 30%;
+    float: left;
   }
